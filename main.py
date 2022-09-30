@@ -3,7 +3,7 @@ from Aluno import Aluno
 from Aula import Aula
 from Professor import Professor
 
-CRUD = str(input('Ecolha um metodo CRUD (Create, Read, Update, Delete): '))
+CRUD = str(input('Ecolha um metodo CRUD (Create, Read, Update, Delete: '))
 if CRUD == 'Create':
     aulaNome = str(input('Entre com a materia: '))
 
@@ -43,34 +43,5 @@ if CRUD == 'Update':
 if CRUD == 'Delete':
     assunto = str(input('Insira qual materia remover: '))
     AulaDB.delete(assunto)
-
-
-
-
-
-
-
-
-
-
-
-
-'''
-a1 = Aluno('Edu', 200, 'GES', 6)
-a2 = Aluno('Douglas', 1714, 'GEC', 6)
-a3 = Aluno('Thiago', 214, 'GES', 2)
-
-alunos = [a1, a2, a3]
-
-professor = Professor('Renzo', 'Banco de dados 2')
-
-aula1 = Aula('Mongo DB', professor, alunos)
-'''
-
-
-
-
-
-
 
 

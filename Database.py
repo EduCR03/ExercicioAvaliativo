@@ -1,8 +1,6 @@
 import pymongo
 from pymongo import MongoClient
-
 from AulaDB import AulaDB
-
 
 class Database:
     def __init__(self, database, collection, dataset=None):

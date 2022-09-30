@@ -1,6 +1,6 @@
 class AulaDB:
     def create(self, auladb):
-        return self.collection.insert_many(auladb).insert_id
+        return self.collection.insert_one(auladb).insert_id
 
     def read(self):
         return self.collection.find()
